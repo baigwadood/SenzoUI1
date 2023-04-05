@@ -79,7 +79,7 @@ def recommend_movies(user_input_genre, duration, era, rating):
     similarities = similarity_scores[similar_movies_indices]
     re=''
     for i in range(len(similar_movies)):
-        res=f("Movie: {similar_movies.iloc[i]} , Similarity Score: {similarities[i]}")\n"
+        res=f("Movie: {similar_movies.iloc[i]} , Similarity Score: {similarities[i]}\n")
         re+=res +'\n' #, Similarity Score: {similarities[i]}")
 
     return re #f"Top 10 movies similar to your input:\n{similar_movies}"
